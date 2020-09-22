@@ -1,4 +1,4 @@
-//
+
 //  FirstResponder.m
 //  Quakes-Objc
 //
@@ -10,4 +10,15 @@
 
 @implementation FirstResponder
 
-@end
+- (void)setName:(NSString *)aName
+{
+    // will set
+    _name = aName.copy;
+
+    // didset
+
+
+}
+
+
+ @end
