@@ -10,15 +10,23 @@
 
 @implementation FirstResponder
 
+
+
+@synthesize name = myInternalName;
+
 - (void)setName:(NSString *)aName
 {
     // will set
-    _name = aName.copy;
+    myInternalName = aName.copy;
 
     // didset
 
 
 }
 
+- (NSString *)name
+{
+    return myInternalName.copy;
+}
 
  @end
